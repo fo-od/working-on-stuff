@@ -14,7 +14,7 @@
         iframe.src = url.toString();
         win.document.body.appendChild(iframe);
         var script = win.document.createElement("script");
-        script.src = "https://3kh0-copy.netlify.app/assets/js/main.js";
+        script.src = "https://3kh0-copy.netlify.app/js/main.js";
         win.document.body.appendChild(script);
         alert(url.toString())
-      };})()
+      };})();
