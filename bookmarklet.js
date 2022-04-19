@@ -1,7 +1,7 @@
 (function () {var url = prompt("Paste the link you want to be embedded into an about:blank page.", "ex. https://example.com");
       var urlObj = new window.URL(window.location.href);
       if (prompt.toString().includes('https://')) {
-        var win = window.open();
+        win = window.open();
         win.document.body.style.margin = "0";
         win.document.body.style.height = "100vh";
         var iframe = win.document.createElement("iframe");
