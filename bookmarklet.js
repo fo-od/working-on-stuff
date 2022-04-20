@@ -1,6 +1,5 @@
 (function () {var url = prompt("Paste the link you want to be embedded into an about:blank page.", "ex. https://example.com");
       var urlObj = new window.URL(window.location.href);
-      if (prompt.toString().includes('https://')) {
         win = window.open();
         win.document.body.style.margin = "0";
         win.document.body.style.height = "100vh";
@@ -14,7 +13,7 @@
         iframe.src = url.toString();
         win.document.body.appendChild(iframe);
         var script = win.document.createElement("script");
-        script.src = "https://3kh0-copy.netlify.app/js/main.js";
+        script.src = "https://fo-od.github.io/assets/js/main.js";
         win.document.body.appendChild(script);
-        alert(url.toString())
-      };})();
+        alert(url.toString());
+})();
