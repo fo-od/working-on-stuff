@@ -1,0 +1,9 @@
+/* system light theme on */
+@media (prefers-color-scheme: light) {
+  background-color: #ffffff;
+}
+
+/* system dark theme on */
+@media (prefers-color-scheme: dark) {
+  background-color: #000000;
+}
