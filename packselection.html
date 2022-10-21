@@ -13,15 +13,16 @@ body {
   background-image: url("https://resclientfps.vercel.app/bruh.jpg");
 }
 .pack-link {
-  height: 400px;
-  width: 300px;
+  height: 250px;
+  width: 200px;
 }
 .pack-tile {
   background-color: #949494;
-  height: 400px;
-  width: 300px;
+  height: 250px;
+  width: 200px;
   color: #ffffff;
-  border-radius: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px white;
   -webkit-animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -34,55 +35,64 @@ body {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    box-shadow: 0px 0px 5px white;
   }
   100% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px white;
   }
 }
 @keyframes scale-up-center {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    box-shadow: 0px 0px 5px white;
   }
   100% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px white;
   }
 }
 @-webkit-keyframes scale-down-center {
   0% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px white;
   }
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    box-shadow: 0px 0px 5px white;
   }
 }
 @keyframes scale-down-center {
   0% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px white;
   }
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    box-shadow: 0px 0px 5px white;
   }
 }
 .pack-icon {
-  border-radius: 30px;
-  width: 300px;
-  height: 300px;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
 }
 .pack-title {
-  font-size: 30px;
+  font-size: 20px;
   color: #ffffff;
   text-align: center;
 }
 .flex-container {
   display: flex;
   flex-direction: row;
+  border-radius: 7px;
   order: 0;
   flex-grow: 0;
   flex-wrap: wrap;
@@ -91,7 +101,7 @@ body {
   backdrop-filter: blur(7px);
   margin: auto;
   -webkit-backdrop-filter: blur(7px);
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 12px white;
   width: 70%;
 }
 .container {
@@ -104,7 +114,7 @@ body {
 </head>
 <body>
 
-<h1 class="text-center">Create a Flex Container</h1>
+<h1 class="text-center">Choose a Resource Pack</h1>
 
 <div class="flex-container"> <!╌ begin pack selection ╌>
   <div class="game-link container">
@@ -116,5 +126,3 @@ body {
 </div> <!╌ end of pack selection ╌>
 </body>
 </html>
-
-
