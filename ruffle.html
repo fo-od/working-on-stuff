@@ -13,7 +13,7 @@
 <script>
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
-    "splashScreen": true,"unmuteOverlay": "hidden"
+    "splashScreen": false,"unmuteOverlay": "hidden"
 };
     window.addEventListener("load", (event) => {
         const ruffle = window.RufflePlayer.newest();
@@ -21,8 +21,8 @@
         const container = document.getElementById("container");
         container.appendChild(player);
         player.load("https://fo-od.github.io/jacksmith.swf");
-        player.style.width = "500px";
-        player.style.height = "374px";
+        player.style.width = "100%";
+        player.style.height = "100%";
     });
 </script>
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
