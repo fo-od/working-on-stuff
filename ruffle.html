@@ -1,0 +1,28 @@
+<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html,
+		body,
+		#container {
+			margin: 0;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+		}
+</style>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("https://fo-od.github.io/jacksmith.swf");
+        player.style.width = 500px;
+        player.style.height = 374px;
+    });
+</script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
